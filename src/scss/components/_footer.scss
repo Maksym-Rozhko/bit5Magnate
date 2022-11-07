@@ -1,7 +1,13 @@
 .footer {
-    padding-top: 85px;
-    padding-bottom: 25px;
+    padding-top: 100px;
+    padding-bottom: 20px;
     background-color: #090A0D;
+
+    .header {
+        position: static;
+        background: transparent;
+        backdrop-filter: blur(0);
+    }
 
     &__container {
         position: relative;
@@ -15,7 +21,7 @@
     }
 
     &__top {
-        padding-bottom: 15px;
+        padding-bottom: 20px;
         border-bottom: 1px solid var(--cs-grey);
 
         .list {
@@ -37,7 +43,7 @@
     &__bottom {
         margin-top: 20px;
 
-        .list.privacy {
+        .list {
             gap: 30px;
             
             li {
@@ -50,25 +56,30 @@
                         color: var(--cs-main);
                     }
                 }
-                .copyright {
-                    color: var(--cs-grey-text);
-                    opacity: .5;
-                    font-size: 10px;
-                    line-height: 14px;
-                }
             }
+        }
+        .copyright {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: #444751;
         }
     }
 
     .list {
         @include flex-v-center;
-        gap: 42px;
+        gap: 50px;
 
         li {
             a {
                 font-weight: 500;
-                font-size: 12px;
-                line-height: 16px;
+                font-size: 14px;
+                line-height: 100%;
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--cs-light);
+                }
             }
         }
     }
@@ -94,25 +105,8 @@
 
             &:hover {
                 .icon {
-                    transform: scale(1.5) translateY(-5px);
-                }
-                .icon.telegram {
-                    fill: #0088CC;
-                }
-                .icon.youtube {
-                    fill: #FF0000;
-                }
-                .icon.twitter {
-                    fill: #1DA1F2;
-                }
-                .icon.instagram {
-                    fill: #DD2A7B;
-                }
-                .icon.facebook {
-                    fill: #3b5998;
-                }
-                .icon.reddit {
-                    fill: #f75820;
+                    // transform: scale(1.5) translateY(-5px);
+                    fill: var(--cs-white);
                 }
             }
         }

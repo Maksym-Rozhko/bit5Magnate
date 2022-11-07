@@ -45,11 +45,11 @@ function timer(id, deadline) {
 
                 if (days && hours) {
                     // set time circular indicator
-                    dd.style.strokeDashoffset = 440 - (440 * time.days) / 30;
-                    hh.style.strokeDashoffset = 440 - (440 * time.hours) / 24;
+                    dd.style.strokeDashoffset = 335 - (335 * time.days) / 30;
+                    hh.style.strokeDashoffset = 335 - (335 * time.hours) / 24;
                 }
-                mm.style.strokeDashoffset = 440 - (440 * time.minutes) / 60;
-                ss.style.strokeDashoffset = 440 - (440 * time.seconds) / 60;
+                mm.style.strokeDashoffset = 335 - (335 * time.minutes) / 60;
+                ss.style.strokeDashoffset = 335 - (335 * time.seconds) / 60;
 
                 if (time.total > 0) {
                     if (minutes) {

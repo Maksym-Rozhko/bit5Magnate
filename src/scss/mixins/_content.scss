@@ -4,18 +4,19 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 100%;
-    color: var(--cs-white);
+    color: var(--cs-light);
     border: 1px solid rgba(233, 233, 233, 0.5);
-    padding: 10px 30px;
+    padding: 13px 19px;
     max-width: 180px;
     text-align: center;
     transition: all ease-in-out .4s;
+    text-transform: uppercase;
 
     &:hover {
-        background-color: var(--cs-main);
-        color: var(--cs-light);
+        color: var(--cs-white);
+        background: var(--cs-gold-bg);
         box-shadow: 0 0 30px rgba(238, 155, 79, .6);
-        border-color: var(--cs-main);
+        border-color: transparent;
     }
 }
 
@@ -27,13 +28,13 @@
     line-height: 100%;
     color: var(--cs-white);
     border: 1px solid transparent;
-    padding: 10px 30px;
+    padding: 13px 19px;
     max-width: 180px;
     text-align: center;
     transition: all ease-in-out .4s;
 
     &:hover {
-        background-color: transparent;
+        background-color: transparent;  
         color: var(--cs-main);
         border: 1px solid var(--cs-main)
     }
@@ -41,43 +42,21 @@
 
 @mixin btn-animate {
     position: relative;
-    overflow: hidden;
+    background: var(--cs-gold-bg);
+    border: none;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 100%;
 
-    &::before {
-        content: "";
-        position: absolute;
-        width: 40px;
-        height: 600%;
-        top: calc(50% - 300%);
-        left: calc(50% - 20px);
-        background-color: var(--cs-main);
-        animation: borderRun 4s linear infinite;
-        animation-delay: .33s;
-        z-index: -1;
-    }
-
-    &::after {
-        content: "";
-        position: absolute;
-        inset: 2px;
-        background-color: var(--cs-dark);
-        z-index: -1;
-    }
-
-    &:hover::before {
-        width: 120%;
-    }
-
-    &:hover::after {
-        inset: 0px;
-        background-color: var(--cs-main);
+    &:hover {
+        background-color: var(--cs-gold-bg);
     }
 }
 
 @mixin title {
     font-weight: 700;
     font-size: 40px;
-    line-height: 115%;
+    line-height: 100%;
     letter-spacing: -0.04em;
     color: var(--cs-white);
     margin-top: 0;
@@ -88,100 +67,100 @@
   padding: 120px 0;
 }
 
-.section--bg {
-  margin-top: 90px;
-  margin-bottom: 100px;
-  padding-top: 72px;
-  padding-bottom: 40px;
-  background-image: url('../images/home/bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+// .section--bg {
+//   margin-top: 90px;
+//   margin-bottom: 100px;
+//   padding-top: 72px;
+//   padding-bottom: 40px;
+//   background-image: url('../images/home/bg.jpg');
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
 
-  .section__title {
-    text-align: center;
-  }
-}
+//   .section__title {
+//     text-align: center;
+//   }
+// }
 
-.section-bg-color {
-    background-color: #090A0D;
-}
+// .section-bg-color {
+//     background-color: #090A0D;
+// }
 
-.content {
-    padding-bottom: 150px;
+// .content {
+//     padding-bottom: 150px;
 
-    .mb-40 {
-        margin-bottom: 40px;
-    }
+//     .mb-40 {
+//         margin-bottom: 40px;
+//     }
     
-    .mt-30 {
-        margin-top: 30px;
-    }
+//     .mt-30 {
+//         margin-top: 30px;
+//     }
     
-    .mb-30 {
-        margin-bottom: 30px;
-    }
+//     .mb-30 {
+//         margin-bottom: 30px;
+//     }
 
-    &__wrapper {
-        max-width: 1110px;
-        width: 100%;
-        margin: 0 auto;
-    }
+//     &__wrapper {
+//         max-width: 1110px;
+//         width: 100%;
+//         margin: 0 auto;
+//     }
 
-    &__title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 27px;
-        color: var(--cs-light);
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+//     &__title {
+//         font-weight: 500;
+//         font-size: 20px;
+//         line-height: 27px;
+//         color: var(--cs-light);
+//         margin-top: 0;
+//         margin-bottom: 0;
+//     }
 
-    &__text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 180%;
-        color: #686B74;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+//     &__text {
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 180%;
+//         color: #686B74;
+//         margin-top: 0;
+//         margin-bottom: 0;
+//     }
     
-    .list {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
+//     .list {
+//         display: grid;
+//         grid-template-columns: 1fr;
+//         gap: 20px;
 
-        &__item {
-            display: flex;
-            gap: 30px;
-        }
+//         &__item {
+//             display: flex;
+//             gap: 30px;
+//         }
 
-        &__item-number {
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 180%;
-            color: var(--cs-light);
-            width: 30px;
-            min-width: 30px;
-            height: 30px;
-            border: 1px solid rgba(68, 71, 81, .5);
-            border-radius: 50%;
-            @include flex-all-center;
-        }
+//         &__item-number {
+//             font-weight: 500;
+//             font-size: 12px;
+//             line-height: 180%;
+//             color: var(--cs-light);
+//             width: 30px;
+//             min-width: 30px;
+//             height: 30px;
+//             border: 1px solid rgba(68, 71, 81, .5);
+//             border-radius: 50%;
+//             @include flex-all-center;
+//         }
 
-        &__item-description {
-            margin-top: 0;
-            margin-bottom: 0;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 22px;
-            color: #686B74;
-        }
-    }
-}
+//         &__item-description {
+//             margin-top: 0;
+//             margin-bottom: 0;
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 22px;
+//             color: #686B74;
+//         }
+//     }
+// }
 
-@include mobile {
-    .section--bg {
-        margin-bottom: 50px;
-    }
-}
+// @include mobile {
+//     .section--bg {
+//         margin-bottom: 50px;
+//     }
+// }

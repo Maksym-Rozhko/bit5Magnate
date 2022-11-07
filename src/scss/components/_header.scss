@@ -1,5 +1,6 @@
 .header {
-    background-color: transparent;
+    background: rgba(9, 10, 13, 0.8);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
@@ -8,9 +9,8 @@
     cursor: default;
 
     &__container {
-        padding: 27px 0;
+        padding: 22px 0;
         @include flex-all-sb;
-        border-bottom: 1px solid var(--cs-grey);
     }
 
     &__right-box {
@@ -21,6 +21,10 @@
         &__img {
             max-width: 80px;
         }
+    }
+
+    .nav {
+        margin-left: 70px;
     }
 
     .nav ul {
@@ -39,7 +43,6 @@
             color: var(--cs-grey-text);
             transition: all ease-in-out .4s;
             padding-bottom: 36px;
-            // border-bottom: 3px solid transparent;
         }
 
         li:hover a {
@@ -53,7 +56,7 @@
         }
 
         li:not(:last-child) {
-            margin-right: 73px;
+            margin-right: 50px;
         }
     }
 
@@ -62,13 +65,14 @@
     }
 
     .auth {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        margin-left: 5px;
+        @include flex-v-center;
+        gap: 20px;
+        margin-left: 2px;
         
         &__signup {
             @include btn-transparent;
+            min-width: 100px;
+            white-space: nowrap;
         }
         &__login {
             @include btn-link;
@@ -76,6 +80,7 @@
         &__btn-anim {
             @include btn-transparent;
             @include btn-animate;
+            min-width: 100px;
         }
     }
 
@@ -264,6 +269,6 @@
     }
 }
 
-.header.active-scroll {
-    background-color: var(--cs-grey);
-}
+// .header.active-scroll {
+//     background-color: var(--cs-grey);
+// }
