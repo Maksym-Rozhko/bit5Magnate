@@ -63,20 +63,20 @@ AOS.init({
     disable: 'mobile',
 });
 
-import scrollr from './vendor/_scrollr';
+// import scrollr from './vendor/_scrollr';
 
-if (isDesktop()) {
-    var s = scrollr.init({
-        smoothScrolling: true,
-        edgeStrategy: 'set',
-        easing: {
-            WTF: Math.random,
-            inverted: function(p) {
-                return 1 - p;
-            }
-        },
-    });
-}
+// if (isDesktop()) {
+//     var s = scrollr.init({
+//         smoothScrolling: true,
+//         edgeStrategy: 'set',
+//         easing: {
+//             WTF: Math.random,
+//             inverted: function(p) {
+//                 return 1 - p;
+//             }
+//         },
+//     });
+// }
 
 // Подключение параллакса блоков при скролле
 // import Rellax from 'rellax';
