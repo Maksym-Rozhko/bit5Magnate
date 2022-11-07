@@ -1,0 +1,48 @@
+@include large-desktop {
+    .scroll-top {
+        bottom: 146px;
+        right: 40px;
+    }
+}
+
+@include small-tablet {
+    .footer {
+        &__top,
+        &__bottom {
+            padding-right: 0;
+        }
+
+        &__bottom {
+            flex-direction: column-reverse;
+            gap: 15px;
+        }
+    }
+    .scroll-top {
+        bottom: 35px;
+    }
+}
+
+@include mobile {
+    .footer {
+        padding-top: 50px;
+
+        .list.privacy {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .list {
+            gap: 15px;
+        }
+    }
+    .scroll-top {
+        bottom: 70px;
+        right: 20px;
+    }
+}
+
+@include small-mobile {
+    .scroll-top {
+        bottom: 235px;
+    }
+}

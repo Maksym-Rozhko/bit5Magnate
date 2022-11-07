@@ -1,0 +1,70 @@
+@include middle-tablet {
+    .header {
+        .nav ul {
+            li:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+
+        .auth {
+            flex-direction: column;
+        }
+
+        .calc-form {
+            .select {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@include small-tablet {
+    .header {
+        .nav {
+            display: none;
+        }
+        .navigation-bg {
+            display: block;
+        }
+        .burger {
+            display: flex;
+        }
+        .navigation-mobile .nav {
+            display: block;
+        }
+        &__right-box {
+            margin-right: 90px;
+        }
+        .auth {
+            flex-direction: row;
+            margin-left: 0;
+        }
+    }
+}
+
+@include mobile {
+    .header {
+        .auth {
+            display: none;
+        }
+        .navigation-mobile .auth {
+            display: flex;
+        }
+    }
+}
+
+@include small-mobile {
+    .header {
+        .auth {
+            &__btn-anim {
+                padding: 10px 20px;
+            }
+        }
+        .navigation-mobile {
+            .auth {
+                display: flex;
+            }
+        }
+    }
+}

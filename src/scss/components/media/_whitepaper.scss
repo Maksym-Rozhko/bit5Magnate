@@ -1,0 +1,231 @@
+@include tablet {
+    .section-bg-color.white-paper {
+        .section {
+            padding: 35px 0;
+        }
+        .section__text {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .white-paper {
+        .section--bg {
+            padding-top: 50px;
+            padding-bottom: 100px;
+    
+            &::before {
+                width: 300px;
+                height: 300px;
+                top: calc(50% - 50px);
+                left: calc(50% - 350px);
+            }
+    
+            .section__title {
+                font-size: 30px;
+            }
+        }
+    }
+    
+    .table-content {
+        background-size: 300px;
+        .list {
+            li {
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    
+    .overview {
+        .section__title {
+            margin-bottom: 20px;
+        }
+        .section__text:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        .banner {
+            margin-top: 20px;
+        }
+    }
+    
+    .vision-goals {
+        .section__title {
+            margin-bottom: 25px;
+        }
+    
+        .section__text {
+            &.mb5 {
+                margin-bottom: 35px;
+            }
+        }
+    
+        .list {
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        .bit-image {
+            max-width: 300px;
+            margin-top: 25px;
+        }
+    }
+    
+    .products {
+        .section__text:not(:last-child) {
+            margin-bottom: 10px
+        }
+    
+        &__links {
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+    
+        &__link {
+            width: 110px;
+            height: 100px;
+            padding: 5px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    
+        .list {
+            margin-bottom: 25px;
+    
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        .chart-image {
+            max-width: 300px;
+        }
+    }
+    
+    .nft-game {
+        .section__title {
+            margin-bottom: 25px;
+        }
+        .section__text {
+            .accent {
+                font-size: 22px;
+                line-height: 26px;
+            }
+        }
+        .section__text:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    
+        .list {
+            padding-left: 15px;
+    
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        .bit-image {
+            max-width: 300px;
+        }
+    }
+    
+    .marketplace {
+        .section__title {
+            margin-bottom: 25px;
+        }
+    
+        .bit-image {
+            max-width: 400px;
+            margin-top: 100px;
+        }
+    }
+    
+    .concept {
+        .section__title {
+            margin-bottom: 25px;
+        }
+    
+        .section__text:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .marketing {
+        .section__title {
+            margin-bottom: 25px;
+        }
+    
+        .section__text:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    
+        ul {
+            padding-left: 15px;
+    
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    
+    .token {
+        .section__title {
+            margin-bottom: 25px;
+        }
+    
+        .section__text:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    
+        ul {
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    
+        .bit-image {
+            max-width: 150px;
+        }
+    }
+    
+    .bit-roadmap {
+        .section__title {
+            margin-bottom: 25px;
+        }
+        ul {
+            margin-bottom: 20px;
+    
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    
+    .appendix {
+        .section__title {
+            margin-bottom: 25px;
+        }
+        ol {
+            padding-left: 20px;
+            margin-bottom: 25px;
+    
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+        ul {
+            padding-left: 15px;
+    
+            li {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+}

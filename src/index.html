@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('partials/head.html')
+
+<body>
+    <div class="cursor"></div>
+    <div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -3000px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    <div id="bg2" data-0="background-position:0px 0px;" data-end="background-position:-500px -1500px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    <div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -500px;" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    @include('partials/header.html')
+    <div class="body-wrap">
+        <main class="main">
+            @include('partials/home.html')
+        </main>
+        @include('partials/footer.html')
+    </div>
+    <butto type="button" class="scroll-top d-none">
+        <svg class="icon" width="12" height="8" viewbox="0 0 12 8" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.600098 6.80029L6.0001 1.40029L11.4001 6.80029"/>
+        </svg>
+    </butto>
+</body>
+
+</html>

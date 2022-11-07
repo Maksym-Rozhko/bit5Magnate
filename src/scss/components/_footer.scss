@@ -1,0 +1,143 @@
+.footer {
+    padding-top: 85px;
+    padding-bottom: 25px;
+    background-color: #090A0D;
+
+    &__container {
+        position: relative;
+        z-index: 11;
+    }
+
+    &__top,
+    &__bottom {
+        @include flex-all-sb;
+        padding-right: 30px;
+    }
+
+    &__top {
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--cs-grey);
+
+        .list {
+            li {
+                a {
+                    color: var(--cs-white);
+                    transition: all ease-in-out .4s;
+                }
+
+                &:hover {
+                    a {
+                        color: var(--cs-main);
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 20px;
+
+        .list.privacy {
+            gap: 30px;
+            
+            li {
+                a {
+                    text-decoration-line: underline;
+                    color: var(--cs-grey-text);
+                    transition: all ease-in-out .4s;
+
+                    &:hover {
+                        color: var(--cs-main);
+                    }
+                }
+                .copyright {
+                    color: var(--cs-grey-text);
+                    opacity: .5;
+                    font-size: 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+    .list {
+        @include flex-v-center;
+        gap: 42px;
+
+        li {
+            a {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+.socials {
+    .list {
+        gap: 10px;
+
+        &__link {
+            background: rgba(234, 235, 240, .05);
+            border-radius: 4px;
+            @include flex-all-center;
+            width: 35px;
+            height: 35px;
+
+            .icon {
+                width: 15px;
+                height: 15px;
+                fill: var(--cs-grey-text);
+                transition: all ease-in-out .4s;
+            }
+
+            &:hover {
+                .icon {
+                    transform: scale(1.5) translateY(-5px);
+                }
+                .icon.telegram {
+                    fill: #0088CC;
+                }
+                .icon.youtube {
+                    fill: #FF0000;
+                }
+                .icon.twitter {
+                    fill: #1DA1F2;
+                }
+                .icon.instagram {
+                    fill: #DD2A7B;
+                }
+                .icon.facebook {
+                    fill: #3b5998;
+                }
+                .icon.reddit {
+                    fill: #f75820;
+                }
+            }
+        }
+    }
+}
+
+.scroll-top {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid var(--cs-grey-text);
+    position: absolute;
+    position: fixed;
+    z-index: 11;
+    bottom: 46px;
+    right: 140px;
+    background-color: transparent;
+    @include flex-all-center;
+    cursor: pointer;
+
+    &:hover {
+        animation: pulseShadow 5s infinite linear;
+    }
+
+    .icon {
+        stroke: var(--cs-white);
+    }
+}

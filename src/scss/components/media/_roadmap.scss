@@ -1,0 +1,9 @@
+@include mobile {
+    .roadmap {
+        &__container {
+            &::after {
+                content: none;
+            }
+        }
+    }
+}

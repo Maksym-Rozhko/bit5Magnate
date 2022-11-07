@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Manrope", sans-serif;
+  --content-width: 1480px;
+  --container-offset: 0px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --cs-white: #fff;
+  --cs-body-bg: var(--cs-dark);
+  --cs-gold-bg: linear-gradient(135deg, #EE9B4F 25%, rgba(238, 155, 79, 0) 94.01%);
+  --cs-silver-bg: linear-gradient(135deg, #E9E9E9 25%, rgba(233, 233, 233, 0) 94.01%);
+  --cs-main: #EE9B4F;
+  --cs-dark: #090A0D;
+  --cs-grey: #14161C;
+  --cs-grey-text: #444751;
+  --cs-light: #E9E9E9;
+}

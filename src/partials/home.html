@@ -1,0 +1,1245 @@
+<!-- <div class="preloader">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div> -->
+<section class="main-screen">
+    <div class="wrapper">
+        <div class="main-screen__banner">
+            <video autoplay muted loop class="main-screen__video">
+                <source src="bit5_banner.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="main-screen__container">
+            <h1 class="title main-screen__title">
+                Before the start of the project:
+            </h1>
+            <div id="currentTimer" class="timer">
+                <div class="timer__container">
+                    <div class="timer__item">
+                        <div class="timer__numbers">
+                            <div class="dots d_dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="dd"></circle>
+                            </svg>
+                            <span id="days">08</span>
+                        </div>
+                        <div class="timer__description">Days</div>
+                    </div>
+                    <div class="timer__item">
+                        <div class="timer__numbers">
+                            <div class="dots h_dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="hh"></circle>
+                            </svg>
+                            <span id="hours">18</span>
+                        </div>
+                        <div class="timer__description">Hours</div>
+                    </div>
+                    <div class="timer__item">
+                        <div class="timer__numbers">
+                            <div class="dots m_dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="mm"></circle>
+                            </svg>
+                            <span id="minutes">33</span>
+                        </div>
+                        <div class="timer__description">Minutes</div>
+                    </div>
+                    <div class="timer__item">
+                        <div class="timer__numbers">
+                            <div class="dots s_dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="ss"></circle>
+                            </svg>
+                            <span id="seconds">44</span>
+                        </div>
+                        <div class="timer__description">Seconds</div>
+                    </div>      
+                </div>
+            </div>
+            <div id="promoTimer" class="timer d-none" data-last-passed-since="29">
+                <div class="timer__container">
+                    <div class="timer__item">
+                        <div class="timer__numbers">
+                            <div class="dots m_dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="mm"></circle>
+                            </svg>
+                            <span id="minutes">33</span>
+                        </div>
+                        <div class="timer__description">Minutes</div>
+                    </div>
+                    <div class="timer__item">
+                        <div class="timer__numbers">
+                            <div class="dots s_dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70" id="ss"></circle>
+                            </svg>
+                            <span id="seconds">44</span>
+                        </div>
+                        <div class="timer__description">Seconds</div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="main-info">
+    <div class="wrapper">
+        <div class="main-info__container">
+            <div class="main-info__block today">
+                <h2 class="main-info__title">
+                    Bit 5 price Today: 
+                </h2>
+                <div class="today__container">
+                    <div class="today__info">
+                        <div class="today__price">
+                            <span class="today__price-currency">
+                                $
+                            </span>
+                            <span class="today__price-value">
+                                376,77
+                            </span>
+                        </div>
+                        <div class="today__stats-info today__stats-info--border">
+                            <span class="today__stats-title">
+                                Today:
+                            </span>
+                            <span class="today__stats increase"> <!-- change 'increase' class name on 'decrease', to change styles -->
+                                <span class="stats-icon">
+                                    <svg class="icon" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.70711 0.292893C8.31658 -0.0976314 7.68342 -0.0976315 7.29289 0.292892L0.928933 6.65685C0.538409 7.04738 0.538408 7.68054 0.928933 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65686L8.70711 0.292893ZM9 17L9 1L7 1L7 17L9 17Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                                <span class="stats-rate">
+                                    + 4,61
+                                </span>
+                            </span>
+                        </div>
+                        <!-- <div class="today__stats-info today__stats-info--border">
+                            <span class="today__stats-title">
+                                Today:
+                            </span>
+                            <span class="today__stats decrease"> change 'increase' class name on 'decrease', to change styles
+                                <span class="stats-icon">
+                                    <svg class="icon" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.70711 0.292893C8.31658 -0.0976314 7.68342 -0.0976315 7.29289 0.292892L0.928933 6.65685C0.538409 7.04738 0.538408 7.68054 0.928933 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65686L8.70711 0.292893ZM9 17L9 1L7 1L7 17L9 17Z" fill="currentColor"/>
+                                    </svg>
+                                </span>
+                                <span class="stats-rate">
+                                    - 4,61
+                                </span>
+                            </span>
+                        </div> -->
+                        <div class="today__stats-info stats-range  today__stats-info--border">
+                            <span class="stats-range__value">
+                                Min: ($ 372,16)
+                            </span>
+                            <span class="stats-range__value">
+                                Max: ($ 377,24)
+                            </span>
+                        </div>
+                        <div class="today__stats-info stats-date">
+                            <span class="stats-date__value">
+                                25 May, 10:44 Bit
+                            </span>
+                        </div>
+                    </div>
+                    <div class="today__grafic">
+                        <img class="d-none" src="../images/icon/today-graphic.svg" alt="bit5 grafic price today">
+                        <div id="app">
+                            <div class="container">
+                                <div class="app__chart app-chart">
+                                    <div class="app-chart__canvas">
+                                        <canvas class="chart" 
+                                            data-chart-label-text="BIT Increase" 
+                                            data-chart-dot-a="0" 
+                                            data-chart-dot-b="220" 
+                                            data-chart-dot-c="120" 
+                                            data-chart-dot-d="270"
+                                            data-chart-x-axis-a="Mon" 
+                                            data-chart-x-axis-b="Tue" 
+                                            data-chart-x-axis-c="Wed" 
+                                            data-chart-x-axis-d="Thu"
+                                        >
+                                        </canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-info__block recent">
+                <h2 class="main-info__title">
+                    Recent purchases 
+                </h2>
+                <div class="recent__container">
+                    <div class="purchases">
+                        <div class="purchases__titles">
+                            <span class="purchases__title">
+                                Costs
+                            </span>
+                            <span class="purchases__title">
+                                Time
+                            </span>
+                            <span class="purchases__title">
+                                Data
+                            </span>
+                        </div>
+                        <ul class="purchases__list list-reset">
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">1</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">2</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">3</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">4</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">5</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">6</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">7</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">8</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">9</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">10</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">11</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">12</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section about">
+    <div class="wrapper">
+        <h2 class="section__title" data-aos="zoom-in-right" data-aos-duration="1500">
+            About the project
+        </h2>
+        <div class="about__container">
+            <div class="about__image" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="100">
+                <img src="../images/home/about.jpg" alt="About the project" class="img">
+            </div>
+            <div class="about__content">
+                <div class="about__content-box">
+                    <div class="about__content-image" data-aos="zoom-in" data-aos-duration="1500">
+                        <img src="../images/home/about-small.jpg" alt="We are a team of crypto-industry professionals." class="img">
+                    </div>
+                    <h3 class="subtitle" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                        We are a team of crypto-industry professionals.<br>
+                        We have developed a platform for launching new cryptocurrency tokens 
+                        together with the community.<br>
+                        Join the winning team and buy a new token at the lowest price!
+                    </h3>
+                </div>
+                <p class="text text--mtb" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="400">
+                    We are launching a new BIT5 token released on the BSC network. 
+                    To develop and popularize the BIT5 token, we assembled a large 
+                    pool of bloggers and journalists, purchased advertising space, 
+                    and created a mechanism to encourage the team and customers. 
+                    From each transaction 10% is deducted for marketing purposes.
+                    They are allocated as follows: 5% goes to referral fees for 
+                    sponsors who invited clients and 5% to pay for publications 
+                    in news publications and popular bloggers.
+                </p>
+                <strong class="text-accent" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="450">
+                    How you can make money on BIT5:
+                </strong>
+                <p class="text text-hidden text-trigger" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="400">
+                    You can just buy BIT5 and wait for it to rise in value 100 times and already make a profit
+                    We are launching a new BIT5 token released on the BSC network. 
+                    To develop and popularize the BIT5 token, we assembled a large 
+                    pool of bloggers and journalists, purchased advertising space, 
+                    and created a mechanism to encourage the team and customers. 
+                    From each transaction 10% is deducted for marketing purposes.
+                    They are allocated as follows: 5% goes to referral fees for 
+                    sponsors who invited clients and 5% to pay for publications 
+                    in news publications and popular bloggers.
+                </p>
+                <div class="btn-group" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <button type="button" class="btn-readmore btn-reset">
+						Read more
+					</button>
+					<a href="#" class="link-goto btn-reset">
+						Program Rules
+					</a>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section tables">
+    <div class="wrapper">
+        <div class="tables__container">
+            <div class="tables__item recent">
+                <h2 class="section__title" data-aos="fade-down-right" data-aos-duration="1500">
+                    BIT3 rating
+                </h2>
+                <div class="recent__container" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="purchases">
+                        <div class="purchases__titles">
+                            <span class="purchases__title">
+                                Costs
+                            </span>
+                            <span class="purchases__title">
+                                Time
+                            </span>
+                            <span class="purchases__title">
+                                Data
+                            </span>
+                        </div>
+                        <ul class="purchases__list list-reset">
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">1</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">2</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">3</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">4</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">5</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">6</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">7</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">8</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">9</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">10</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">11</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">12</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tables__item recent">
+                <h2 class="section__title" data-aos="fade-down-left" data-aos-duration="1500">
+                    BIT4 rating
+                </h2>
+                <div class="recent__container" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="purchases">
+                        <div class="purchases__titles">
+                            <span class="purchases__title">
+                                Costs
+                            </span>
+                            <span class="purchases__title">
+                                Time
+                            </span>
+                            <span class="purchases__title">
+                                Data
+                            </span>
+                        </div>
+                        <ul class="purchases__list list-reset">
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">1</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">2</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">3</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">4</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">5</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">6</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">7</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">8</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">9</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">10</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">11</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                            <li class="purchases__list-item">
+                                <span class="code"><span class="number">12</span>TV6MuMXfmLbBqPZvBHdwFsDnQeVfn</span>
+                                <span class="costs">50$</span>
+                                <span class="time">11:34:23</span>
+                                <span class="data">20.05.2022</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section rating slider">
+    <div class="wrapper">
+        <div class="rating__container">
+            <h2 class="section__title" data-aos="fade-down-right" data-aos-duration="1500">
+                BIT5 rating
+            </h2>
+            <div class="slider__controls" data-aos="fade-down-left" data-aos-duration="1500">
+                <div class="swiper-button-next rating__btns"></div>
+                <div class="swiper-button-prev rating__btns"></div>
+            </div>
+        </div>
+    </div>
+    <div class="slider__container">
+        <div class="swiper rating__slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider__item item" data-aos="flip-left" data-aos-duration="1500">
+                        <div class="item__header">
+                            <span class="item__header-title">
+                                Purse number
+                            </span>
+                            <span class="item__header-number">
+                                1
+                            </span>
+                        </div>
+                        <strong class="item__code">
+                            TV6MuMXfmLbBqPZvBHdwFsDnQeVfn
+                        </strong>
+                        <div class="item__info">
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Costs:
+                                </span>
+                                <span class="item__info-value">
+                                    50$
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Data:
+                                </span>
+                                <span class="item__info-value">
+                                    20.05.2022
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Time:
+                                </span>
+                                <span class="item__info-value">
+                                    11:34:23
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item item" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="item__header">
+                            <span class="item__header-title">
+                                Purse number
+                            </span>
+                            <span class="item__header-number">
+                                2
+                            </span>
+                        </div>
+                        <strong class="item__code">
+                            TV6MuMXfmLbBqPZvBHdwFsDnQeVfn
+                        </strong>
+                        <div class="item__info">
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Costs:
+                                </span>
+                                <span class="item__info-value">
+                                    50$
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Data:
+                                </span>
+                                <span class="item__info-value">
+                                    20.05.2022
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Time:
+                                </span>
+                                <span class="item__info-value">
+                                    11:34:23
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item item" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="item__header">
+                            <span class="item__header-title">
+                                Purse number
+                            </span>
+                            <span class="item__header-number">
+                                3
+                            </span>
+                        </div>
+                        <strong class="item__code">
+                            TV6MuMXfmLbBqPZvBHdwFsDnQeVfn
+                        </strong>
+                        <div class="item__info">
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Costs:
+                                </span>
+                                <span class="item__info-value">
+                                    50$
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Data:
+                                </span>
+                                <span class="item__info-value">
+                                    20.05.2022
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Time:
+                                </span>
+                                <span class="item__info-value">
+                                    11:34:23
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item item" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="item__header">
+                            <span class="item__header-title">
+                                Purse number
+                            </span>
+                            <span class="item__header-number">
+                                4
+                            </span>
+                        </div>
+                        <strong class="item__code">
+                            TV6MuMXfmLbBqPZvBHdwFsDnQeVfn
+                        </strong>
+                        <div class="item__info">
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Costs:
+                                </span>
+                                <span class="item__info-value">
+                                    50$
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Data:
+                                </span>
+                                <span class="item__info-value">
+                                    20.05.2022
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Time:
+                                </span>
+                                <span class="item__info-value">
+                                    11:34:23
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
+                        <div class="item__header">
+                            <span class="item__header-title">
+                                Purse number
+                            </span>
+                            <span class="item__header-number">
+                                5
+                            </span>
+                        </div>
+                        <strong class="item__code">
+                            TV6MuMXfmLbBqPZvBHdwFsDnQeVfn
+                        </strong>
+                        <div class="item__info">
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Costs:
+                                </span>
+                                <span class="item__info-value">
+                                    50$
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Data:
+                                </span>
+                                <span class="item__info-value">
+                                    20.05.2022
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Time:
+                                </span>
+                                <span class="item__info-value">
+                                    11:34:23
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__item item">
+                        <div class="item__header">
+                            <span class="item__header-title">
+                                Purse number
+                            </span>
+                            <span class="item__header-number">
+                                6
+                            </span>
+                        </div>
+                        <strong class="item__code">
+                            TV6MuMXfmLbBqPZvBHdwFsDnQeVfn
+                        </strong>
+                        <div class="item__info">
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Costs:
+                                </span>
+                                <span class="item__info-value">
+                                    50$
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Data:
+                                </span>
+                                <span class="item__info-value">
+                                    20.05.2022
+                                </span>
+                            </div>
+                            <div class="item__info-block">
+                                <span class="item__info-title">
+                                    Time:
+                                </span>
+                                <span class="item__info-value">
+                                    11:34:23
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section prizes">
+    <div class="wrapper">
+        <div class="prizes__container">
+            <h2 class="section__title" data-aos="fade-down-right" data-aos-duration="1500">
+                Get prizes
+            </h2>
+            <div class="prizes__tabs">
+                <div class="tabs" data-tabs="tab">
+                    <ul class="tabs__nav list-reset">
+                        <li class="tabs__nav-item" data-aos="zoom-out-down" data-aos-duration="1500">
+                            <button class="tabs__nav-btn" type="button">         
+                                <div class="tabs__nav-icon">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                                    </svg>      
+                                </div>          
+                                <div class="tabs__new-text">
+                                    <span>BIT</span>
+                                    <span>№ 1</span>
+                                </div>   
+                            </button>
+                        </li>
+                        <li class="tabs__nav-item" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="200">
+                            <button class="tabs__nav-btn" type="button">         
+                                <div class="tabs__nav-icon">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                                    </svg>      
+                                </div>          
+                                <div class="tabs__new-text">
+                                    <span>BIT</span>
+                                    <span>№ 2</span>
+                                </div>   
+                            </button>
+                        </li>
+                        <li class="tabs__nav-item" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="400">
+                            <button class="tabs__nav-btn" type="button">         
+                                <div class="tabs__nav-icon">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                                    </svg>      
+                                </div>          
+                                <div class="tabs__new-text">
+                                    <span>BIT</span>
+                                    <span>№ 3</span>
+                                </div>   
+                            </button>
+                        </li>
+                        <li class="tabs__nav-item" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="600">
+                            <button class="tabs__nav-btn" type="button">         
+                                <div class="tabs__nav-icon">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                                    </svg>      
+                                </div>          
+                                <div class="tabs__new-text">
+                                    <span>BIT</span>
+                                    <span>№ 4</span>
+                                </div>   
+                            </button>
+                        </li>
+                        <li class="tabs__nav-item" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-delay="800">
+                            <button class="tabs__nav-btn" type="button">         
+                                <div class="tabs__nav-icon">
+                                    <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                                    </svg>      
+                                </div>          
+                                <div class="tabs__new-text">
+                                    <span>BIT</span>
+                                    <span>№ 5</span>
+                                </div>   
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tabs__content">
+                        <div class="tabs__panel">
+                            <h4 class="title" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+                                Since the start of the project the system expects the first purchase of 
+                                BIT5 worth 50 USDT. Warning! If purchase<br>
+                                amount is less than 50 USDT, this transaction will not be taken into account!
+                            </h4>
+                            <p class="text" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
+                                As soon as the first transaction appears in the blockchain, the site 
+                                will start a 120 second countdown timer.<br><br>
+                                If no new BIT5 purchase transaction for 50 USDT appears in the blockchain 
+                                before the timer reaches 0, the purse that bought last becomes the winner 
+                                and receives 1 BTC. If there was another purchase in the network before 
+                                the timer zeroed out, the system will start a new countdown from the moment of 
+                                that transaction.<br><br>
+                                The action duration is defined as 1 month from the start at 00:00:00 on 01.07.2022 
+                                and after that time if the timer has not stopped earlier the timer will be stopped 
+                                forcibly at 00:00:00 on 01.08.2022. The last recorded online BIT5 transaction of 50 
+                                USDT becomes a winner and receives 1 BTC.<br><br>
+                                Be sure to register in the system before you buy! All you have to do is log in 
+                                with your MetaMask wallet<br><br>
+                                Pay attention, because MetaMask wallet does not support BTC, you must specify your 
+                                BTC address in your personal cabinet. Be sure to do it!
+                            </p>
+                        </div>
+                        <div class="tabs__panel">
+                            <h4 class="title">
+                                2 - Since the start of the project the system expects the first purchase of 
+                                BIT5 worth 50 USDT. Warning! If purchase amount is less than 50 USDT, 
+                                this transaction will not be taken into account!
+                            </h4>
+                            <p class="text">
+                                As soon as the first transaction appears in the blockchain, the site 
+                                will start a 120 second countdown timer.<br><br>
+                                If no new BIT5 purchase transaction for 50 USDT appears in the blockchain 
+                                before the timer reaches 0, the purse that bought last becomes the winner 
+                                and receives 1 BTC. If there was another purchase in the network before 
+                                the timer zeroed out, the system will start a new countdown from the moment of 
+                                that transaction.<br><br>
+                                The action duration is defined as 1 month from the start at 00:00:00 on 01.07.2022 
+                                and after that time if the timer has not stopped earlier the timer will be stopped 
+                                forcibly at 00:00:00 on 01.08.2022. The last recorded online BIT5 transaction of 50 
+                                USDT becomes a winner and receives 1 BTC.<br><br>
+                                Be sure to register in the system before you buy! All you have to do is log in 
+                                with your MetaMask wallet<br><br>
+                                Pay attention, because MetaMask wallet does not support BTC, you must specify your 
+                                BTC address in your personal cabinet. Be sure to do it!
+                            </p>
+                        </div>
+                        <div class="tabs__panel">
+                            <h4 class="title">
+                                3 - Since the start of the project the system expects the first purchase of 
+                                BIT5 worth 50 USDT. Warning! If purchase amount is less than 50 USDT, 
+                                this transaction will not be taken into account!
+                            </h4>
+                            <p class="text">
+                                As soon as the first transaction appears in the blockchain, the site 
+                                will start a 120 second countdown timer.<br><br>
+                                If no new BIT5 purchase transaction for 50 USDT appears in the blockchain 
+                                before the timer reaches 0, the purse that bought last becomes the winner 
+                                and receives 1 BTC. If there was another purchase in the network before 
+                                the timer zeroed out, the system will start a new countdown from the moment of 
+                                that transaction.<br><br>
+                                The action duration is defined as 1 month from the start at 00:00:00 on 01.07.2022 
+                                and after that time if the timer has not stopped earlier the timer will be stopped 
+                                forcibly at 00:00:00 on 01.08.2022. The last recorded online BIT5 transaction of 50 
+                                USDT becomes a winner and receives 1 BTC.<br><br>
+                                Be sure to register in the system before you buy! All you have to do is log in 
+                                with your MetaMask wallet<br><br>
+                                Pay attention, because MetaMask wallet does not support BTC, you must specify your 
+                                BTC address in your personal cabinet. Be sure to do it!
+                            </p>
+                        </div>
+                        <div class="tabs__panel">
+                            <h4 class="title">
+                                4 - Since the start of the project the system expects the first purchase of 
+                                BIT5 worth 50 USDT. Warning! If purchase amount is less than 50 USDT, 
+                                this transaction will not be taken into account!
+                            </h4>
+                            <p class="text">
+                                As soon as the first transaction appears in the blockchain, the site 
+                                will start a 120 second countdown timer.<br><br>
+                                If no new BIT5 purchase transaction for 50 USDT appears in the blockchain 
+                                before the timer reaches 0, the purse that bought last becomes the winner 
+                                and receives 1 BTC. If there was another purchase in the network before 
+                                the timer zeroed out, the system will start a new countdown from the moment of 
+                                that transaction.<br><br>
+                                The action duration is defined as 1 month from the start at 00:00:00 on 01.07.2022 
+                                and after that time if the timer has not stopped earlier the timer will be stopped 
+                                forcibly at 00:00:00 on 01.08.2022. The last recorded online BIT5 transaction of 50 
+                                USDT becomes a winner and receives 1 BTC.<br><br>
+                                Be sure to register in the system before you buy! All you have to do is log in 
+                                with your MetaMask wallet<br><br>
+                                Pay attention, because MetaMask wallet does not support BTC, you must specify your 
+                                BTC address in your personal cabinet. Be sure to do it!
+                            </p>
+                        </div>
+                        <div class="tabs__panel">
+                            <h4 class="title">
+                                5 - Since the start of the project the system expects the first purchase of 
+                                BIT5 worth 50 USDT. Warning! If purchase amount is less than 50 USDT, 
+                                this transaction will not be taken into account!
+                            </h4>
+                            <p class="text">
+                                As soon as the first transaction appears in the blockchain, the site 
+                                will start a 120 second countdown timer.<br><br>
+                                If no new BIT5 purchase transaction for 50 USDT appears in the blockchain 
+                                before the timer reaches 0, the purse that bought last becomes the winner 
+                                and receives 1 BTC. If there was another purchase in the network before 
+                                the timer zeroed out, the system will start a new countdown from the moment of 
+                                that transaction.<br><br>
+                                The action duration is defined as 1 month from the start at 00:00:00 on 01.07.2022 
+                                and after that time if the timer has not stopped earlier the timer will be stopped 
+                                forcibly at 00:00:00 on 01.08.2022. The last recorded online BIT5 transaction of 50 
+                                USDT becomes a winner and receives 1 BTC.<br><br>
+                                Be sure to register in the system before you buy! All you have to do is log in 
+                                with your MetaMask wallet<br><br>
+                                Pay attention, because MetaMask wallet does not support BTC, you must specify your 
+                                BTC address in your personal cabinet. Be sure to do it!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" target="_blank"  class="prizes__signup btn-reset" data-aos="zoom-out-up" data-aos-duration="1500" data-aos-delay="800">
+                    Sign up
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section every-day">
+    <div class="wrapper">
+        <h2 class="section__title" data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="200">
+            Buy every day, increase your chances and take higher profit!
+        </h2>
+        <p class="section__text" data-aos-duration="1500" data-aos-delay="400">
+            Our financial model is also ideal for those who love passive income. The bigger your BIT5 deposit, 
+            the more rewards you get. Each new buyer participant raises the price of BIT5 with their purchases 
+            due to the full diluted total supply of the BIT5 token.<br><br>
+            We expect more than 1,500 purchases daily, which will significantly increase the liquidity of the 
+            project in the amount of more than 75,000 (+75% of the initiated liquidity). As a result, in our 
+            first round campaign, the deposit holder can multiply his funds by more than 20 times (x20)<br><br>
+            Ready for regular rewards? Buy every day more than 50$ in BIT5 tokens and increase the chances to 
+            get 1 BNB as an everyday reward or 1 ETH every week. More purchases - more chances!
+        </p>
+    </div>
+</section>
+<section class="section fq">
+    <div class="wrapper">
+        <h2 class="section__title" data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="200">
+            FAQ
+        </h2>
+        <ul class="faq list-reset">
+            <li class="faq__item faq__item--active">
+                <div class="faq__question" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        What Is Bit5 Bitcoin Reward system?
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        The Bit5.win Bitcoin Reward Platform is a provably fair online last-minute buy competition 
+                        that takes place on the bit5.win website. Where 5 lucky users stand a chance to win up to 
+                        $150,000 in free bitcoins in each round.<br>
+                        We are a secure online reward system based on the Binance Smart Chain (BSC) decentralized 
+                        network which uses the concept of smart contracts, BIT5 token transaction fees, BTC for prize 
+                        distribution and a referral system
+                    </p>
+                </div>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question"  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        How to Play?
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        Entering the system is easy – all you need are one or more purchases over $50 worth of BIT5 
+                        tokens that make you eligible to participate. There are several ways to become lucky winners, 
+                        and once you do your first purchase, the system automatically enters you into the draw.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question"  data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        What Schedule?
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        The action duration is defined as 1 month from the start at 00:00:00 on 01.07.2022 and after 
+                        that time if the timer has not stopped earlier the timer will be stopped forcibly at 00:00:00 
+                        on 01.08.2022. The last recorded on BIT5.win website ticket purchase becomes a winner and 
+                        receives 1 BTC.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="600">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        Where to Buy BIT5 Token?
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        You can buy your BIT5 token on Pancakeswap and other available exchanges.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        What is BIT5 token?
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        BIT5 is a BEP20 deflation token that holds the utility for the user, as a payment method 
+                        along with the BTC to participate in Bit5 Bitcoin Reward system. There are three additional 
+                        fees from each transaction for increasing the value and price of BIT5:<br>
+                        - 5% goes as a reward to BIT5 holders and referrals<br>
+                        - 5% goes to liquidity<br>
+                        - 5% goes to marketing and additional competitions<br>
+                        Contract address: <br>
+                        Total Supply: 1,000,000,000<br>
+                        Decimals: 9<br>
+                        Total supply is fully diluted in liquidity with an initial price $0,0001 per 1 BIT5 token
+                    </p>
+                </div>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="800">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        Risks
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        There are many risks involved in running a reward system. We have the maturity talent, 
+                        experience, and high management skills to overcome them. Our liquidity is protected and 
+                        locked, before any purchase, everyone needs to make DYOR.
+                    </p>
+                </div>
+            </li>
+            <li class="faq__item">
+                <div class="faq__question" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">
+                    <div class="faq__question-icon">
+                        <svg width="28" height="20" viewBox="0 0 28 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.8642 5.71054L22.0255 7.11957C21.9254 7.14892 21.8408 7.21758 21.7902 7.31051C21.7396 7.40344 21.7271 7.51306 21.7555 7.61536C21.8083 7.80575 21.8351 8.00266 21.8351 8.20052C21.8355 8.55625 21.7483 8.90637 21.5816 9.21873C21.415 9.5311 21.1741 9.79571 20.8812 9.98828C20.5883 10.1808 20.2527 10.2952 19.9053 10.3208C19.5578 10.3465 19.2097 10.2826 18.8927 10.135C18.5757 9.98746 18.3001 9.76096 18.0912 9.47631C17.8823 9.19167 17.7467 8.85799 17.6969 8.50591C17.6472 8.15383 17.6848 7.79462 17.8064 7.46127C17.928 7.12792 18.1297 6.8311 18.3929 6.59805C18.4321 6.56354 18.4643 6.52146 18.4876 6.47422C18.5109 6.42699 18.5248 6.37552 18.5285 6.32278C18.5323 6.27004 18.5258 6.21706 18.5095 6.16688C18.4932 6.1167 18.4673 6.0703 18.4334 6.03035L14.0363 0.850282C13.9982 0.808624 13.9522 0.775406 13.901 0.752694C13.8498 0.729982 13.7946 0.718262 13.7388 0.718262C13.683 0.718262 13.6278 0.729982 13.5767 0.752694C13.5255 0.775406 13.4795 0.808624 13.4414 0.850282L9.0443 6.02943C9.01039 6.06938 8.98453 6.11577 8.9682 6.16594C8.95187 6.21611 8.94539 6.26908 8.94913 6.32181C8.95287 6.37454 8.96676 6.426 8.99 6.47325C9.01324 6.52049 9.04538 6.56259 9.08457 6.59713C9.34768 6.83004 9.54929 7.12669 9.67091 7.45988C9.79252 7.79306 9.83023 8.15209 9.78059 8.50403C9.73095 8.85598 9.59554 9.18955 9.38679 9.47414C9.17804 9.75873 8.90264 9.98523 8.58586 10.1328C8.26907 10.2805 7.92106 10.3445 7.57375 10.319C7.22644 10.2935 6.89096 10.1793 6.59809 9.98701C6.30523 9.79467 6.06436 9.53029 5.8976 9.21815C5.73084 8.90601 5.64352 8.5561 5.64365 8.20052C5.64374 8.00266 5.67054 7.80575 5.7233 7.61536C5.75165 7.51291 5.73902 7.40315 5.68819 7.31019C5.63736 7.21723 5.55248 7.14867 5.45219 7.11957L0.613439 5.71054C0.539999 5.68907 0.462027 5.68988 0.389028 5.71286C0.316029 5.73585 0.251155 5.78003 0.202313 5.84001C0.153472 5.89999 0.122773 5.97318 0.113958 6.05067C0.105144 6.12816 0.118594 6.20659 0.152669 6.27641L5.13339 16.54L4.77949 19.0551C4.77142 19.1121 4.77547 19.1703 4.79135 19.2256C4.80723 19.2809 4.83458 19.3321 4.87154 19.3757C4.9085 19.4193 4.9542 19.4542 5.00556 19.4782C5.05691 19.5022 5.1127 19.5146 5.16916 19.5146H22.3085C22.365 19.5145 22.4207 19.5021 22.4721 19.4781C22.5234 19.4542 22.5691 19.4192 22.606 19.3756C22.643 19.3321 22.6703 19.2809 22.6862 19.2256C22.7021 19.1703 22.7062 19.1121 22.6982 19.0551L22.3443 16.54L27.325 6.27641C27.3589 6.20661 27.3722 6.12827 27.3633 6.05091C27.3544 5.97355 27.3236 5.90049 27.2748 5.84063C27.226 5.78076 27.1612 5.73666 27.0883 5.71369C27.0154 5.69072 26.9376 5.68987 26.8642 5.71123V5.71054ZM5.62363 18.7102L5.87831 16.8998H21.5994L21.854 18.7102H5.62363ZM21.6808 16.0957H5.79687L1.25352 6.73291L4.88433 7.78974C4.81683 8.27563 4.87001 8.77105 5.03899 9.23047C5.20798 9.68989 5.48733 10.0986 5.85139 10.4189C6.21545 10.7393 6.65253 10.9611 7.12245 11.0639C7.59237 11.1667 8.08006 11.1472 8.5407 11.0073C9.00133 10.8674 9.42013 10.6114 9.7586 10.263C10.0971 9.91464 10.3443 9.48495 10.4777 9.01347C10.6111 8.54199 10.6262 8.04384 10.5218 7.56481C10.4174 7.08578 10.1967 6.64124 9.88012 6.27204L13.7388 1.72745L17.5976 6.2725C17.2924 6.62857 17.0762 7.05488 16.9677 7.51491C16.8592 7.97495 16.8615 8.45499 16.9744 8.91392C17.0873 9.37286 17.3075 9.797 17.6161 10.15C17.9246 10.503 18.3124 10.7744 18.7462 10.9409C19.18 11.1073 19.6468 11.1639 20.1067 11.1058C20.5666 11.0477 21.0058 10.8767 21.3868 10.6073C21.7677 10.3379 22.0791 9.97819 22.2941 9.55903C22.5092 9.13986 22.6215 8.67372 22.6215 8.20052C22.6214 8.06325 22.612 7.92614 22.5933 7.7902L26.2242 6.73337L21.6808 16.0957Z" fill="currentColor"/>
+                        </svg>      
+                    </div>  
+                    <p class="faq__question-text">
+                        Security
+                    </p>
+                </div>
+                <div class="faq__answer">
+                    <p class="faq__answer-text">
+                        We are following the best practices when it comes to securing infrastructure and data including 
+                        ISO/IEC27001:20132 and the CryptoCurrency Security Standard (CCSS)
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="banner" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200">
+    <picture>
+      <source srcset="../images/home/bit-banner-2.avif" type="image/avif">
+      <source srcset="../images/home/bit-banner-2.webp" type="image/webp">
+      <img loading="lazy" src="../images/home/bit-banner-2.jpg" class="image" width="100%" height="100%" alt="bit banner">
+    </picture>
+</div>
+<section class="section rules">
+    <div class="wrapper">
+        <h2 class="section__title" data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="200">
+            Program Rules
+        </h2>
+        <div class="rules__container">
+            <ol class="rules__list list list-reset">
+                <li class="list__item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+                    <span class="list__item-number">1</span>
+                    <p class="list__item-description">
+                        Porttitor erat aliquet lorem velit velit enim justo tincidunt. 
+                        Metus, malesuada adipiscing lacus, tortor purus. Scelerisque 
+                        aliquam, tristique felis, nec pellentesque quam. 
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="400">
+                    <span class="list__item-number">2</span>
+                    <p class="list__item-description">
+                        Porttitor erat aliquet lorem velit velit enim justo tincidunt. 
+                        Metus, malesuada adipiscing lacus, tortor purus. Scelerisque 
+                        aliquam, tristique felis, nec pellentesque quam.
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                    <span class="list__item-number">3</span>
+                    <p class="list__item-description">
+                        At amet, vestibulum egestas sed sem proin. In laoreet eget erat 
+                        risus. Ac, et risus, et morbi facilisis.
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    <span class="list__item-number">4</span>
+                    <p class="list__item-description">
+                        At amet, vestibulum egestas sed sem proin. In laoreet eget erat risus. 
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    <span class="list__item-number">5</span>
+                    <p class="list__item-description">
+                        Aliquam nulla nec, aliquam non. Elementum sit cursus feugiat 
+                        volutpat, convallis sit nulla mattis. 
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1000">
+                    <span class="list__item-number">6</span>
+                    <p class="list__item-description">
+                        Aliquam nulla nec, aliquam non. Elementum sit cursus feugiat 
+                        volutpat, convallis sit nulla mattis. 
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1200">
+                    <span class="list__item-number">7</span>
+                    <p class="list__item-description">
+                        Cursus semper nulla et id elit id. Faucibus semper luctus erat 
+                        cras at congue tortor. Lectus vel aliquet sit quisque enim, a, 
+                        risus quis. 
+                    </p>
+                </li>
+                <li class="list__item" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="1300">
+                    <span class="list__item-number">8</span>
+                    <p class="list__item-description">
+                        Cursus semper nulla et id elit id. Faucibus semper luctus erat 
+                        cras at congue tortor. Lectus vel aliquet sit quisque enim, a, 
+                        risus quis. 
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </div>
+</section>
