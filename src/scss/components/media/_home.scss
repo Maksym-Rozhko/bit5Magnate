@@ -30,6 +30,11 @@
             }
         }
     }
+    .bit-banner {
+        &__container {
+            padding: 60px 80px 30px 80px;
+        }
+    }
     .prizes {
         &__tabs {
             .tabs {
@@ -51,6 +56,13 @@
                     }
                 }
             }
+        }
+    }
+    .token {
+        padding-top: 100px;
+
+        &__container {
+            gap: 50px;
         }
     }
 }
@@ -102,6 +114,12 @@
             gap: 20px;
         }
     }
+    .token {
+        &__container {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
 }
 
 @include small-tablet {
@@ -135,6 +153,38 @@
         .game {
             &__container {
                 grid-template-columns: 1fr;
+            }
+        }
+    }
+    .bit-banner {
+        padding: 30px 0;
+        
+        &__container {
+            padding: 30px 50px 15px 50px;
+        }
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+    .token {
+        padding: 80px 0;
+
+        &__text {
+            margin: 30px 0;
+        }
+
+        &__content {
+            .token__title {
+                margin: 0;
+            }
+            .token__text {
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+            .text {
+                margin-bottom: 50px;
             }
         }
     }
@@ -278,40 +328,107 @@
             font-size: 24px;
         }
     }
+    .bit-banner {
+        &__container {
+            padding: 70px 40px 340px 40px;
+            background-image: url('../images/home/bit-banner-mob.jpg');
+        }
+
+        &__title {
+            font-size: 30px;
+            margin-bottom: 30px;
+            max-width: 250px;
+        }
+    }
     .prizes {
         &__tabs {
             .tabs {
+                margin-bottom: 50px;
+                padding-bottom: 0;
+                border-bottom: none;
                 &__nav {
-                    flex-wrap: wrap;
-                    gap: 5px;
+                    // flex-wrap: wrap;
+                    gap: 20px;
+                    padding-bottom: 13px;
+                    margin-bottom: 40px;
+                    overflow-x: auto;
+                    justify-content: space-between;
                 }
                 &__nav-item {
                     padding: 5px;
+                    min-width: 145px;
                 }
                 &__nav-btn {
-                    flex-direction: column;
+                    // flex-direction: column;
                     gap: 5px;
+
+                    &::before {
+                        bottom: -17px;
+                    }
 
                     .tabs__nav-icon {
                         margin-right: 0;
                     }
                     .tabs__new-text {
-                        display: flex;
-                        align-items: center;
+                        @include flex-v-center;
                         gap: 5px;
-                        font-size: 15px;
-                    }
-                }
-                &__content {
-                    .tabs__panel {
-                        .title {
-                            font-size: 18px;
-                            line-height: 22px;
-                            margin-bottom: 15px;
-                        }
+                        font-size: 20px;
                     }
                 }
             }
+        }
+        &__signup {
+            margin-bottom: 20px;
+            max-width: 315px;
+            margin-left: 0;
+            padding: 17px 36px;
+            text-transform: none;
+        }
+        .text-accent {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+    .token {
+        padding: 80px 0;
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__text {
+            font-size: 18px;
+            max-width: 210px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__content {
+            .token__title {
+                text-align: center;
+            }
+            .token__text {
+                max-width: inherit;
+            }
+            .text {
+                text-align: center;
+            }
+        }
+        .btn-main {
+            margin: 0 auto;
+        }
+    }
+    .swap {
+        padding: 70px 55px 360px 55px;
+        background-image: url('../images/home/pancakesswap-mob-bg.jpg');
+
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        &__btn {
+            margin: 0 auto;
         }
     }
 }
@@ -331,26 +448,6 @@
         .item {
             padding: 50px 10px 40px 10px;
             max-width: 240px;
-        }
-    }
-    .prizes {
-        &__tabs {
-            .tabs {
-                &__nav-btn {
-                    .tabs__nav-icon {
-                        width: 35px;
-                        height: 35px;
-
-                        svg {
-                            width: 18px;
-                            height: 10px;
-                        }
-                    }
-                    .tabs__new-text {
-                        font-size: 12px;
-                    }
-                }
-            }
         }
     }
 }
