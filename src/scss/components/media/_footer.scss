@@ -5,8 +5,40 @@
     }
 }
 
+@include tablet {
+    .footer {
+        padding-top: 70px;
+
+        .copyright {
+            flex-shrink: 0;
+        }
+
+        .nav {
+            margin: 0 20px;
+
+            .list {
+                flex-wrap: wrap;
+                margin: 0 20px;
+                gap: 20px;
+            }
+        }
+
+        &__bottom {
+            padding-right: 0;
+        }
+    }
+}
+
 @include small-tablet {
     .footer {
+        padding-bottom: 25px;
+
+        .nav {
+            .list {
+                margin: 0;
+            }
+        }
+
         &__top,
         &__bottom {
             padding-right: 0;
@@ -15,6 +47,9 @@
         &__bottom {
             flex-direction: column-reverse;
             gap: 15px;
+        }
+        .header__right-box {
+            margin-right: 0;
         }
     }
     .scroll-top {
@@ -34,6 +69,52 @@
         .list {
             gap: 15px;
         }
+        .header__right-box {
+            .auth {
+                &__login,
+                &__signup {
+                    display: block;
+                }
+            }
+        }
+        &__top {
+            .logo-link {
+                margin-bottom: 50px;
+            }
+
+            flex-direction: column;
+            margin-bottom: 54px;
+            padding-bottom: 0;
+            border-bottom: none;        
+        }
+
+        &__bottom {
+            margin-top: 0;
+
+            .nav {
+                max-width: 200px;
+                justify-content: center;
+                order: 1;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #14161C;
+            }
+        }
+
+        .copyright,
+        .socials {
+            display: none;
+        }
+
+        .bottom-group {
+            @include flex-v-center;
+            margin-right: auto;
+            gap: 50px;
+
+            .copyright,
+            .socials {
+                display: flex;
+            }
+        }
     }
     .scroll-top {
         bottom: 70px;
@@ -42,7 +123,15 @@
 }
 
 @include small-mobile {
+    .footer {
+        .bottom-group {
+            .copyright {
+                max-width: 120px;
+            }
+        }
+    }
     .scroll-top {
-        bottom: 235px;
+        bottom: 25px;
+        right: 16px;
     }
 }
