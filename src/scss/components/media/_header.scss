@@ -1,14 +1,37 @@
-@include middle-tablet {
+@include small-desktop {
     .header {
-        .nav ul {
-            li:not(:last-child) {
-                margin-right: 25px;
+        .nav {
+            margin-left: 0;
+
+            ul {
+                li {
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+                }
             }
         }
+    }
+}
 
-        .auth {
-            flex-direction: column;
+@include middle-tablet {
+    .header {
+        .nav {
+            margin-left: 25px;
+            margin-right: 25px;
+
+            ul {
+                flex-wrap: wrap;
+                gap: 10px 0;
+    
+                li:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
         }
+        // .auth {
+        //     flex-direction: column;
+        // }
 
         .calc-form {
             .select {
@@ -34,7 +57,7 @@
             display: block;
         }
         &__right-box {
-            margin-right: 90px;
+            margin-right: 80px;
         }
         .auth {
             flex-direction: row;
@@ -44,12 +67,50 @@
 }
 
 @include mobile {
+    .body-wrap {
+        overflow-x: hidden;
+    }
     .header {
-        .auth {
+        &__right-box {
+            margin-right: 60px;
+        }
+        .auth__login {
             display: none;
+        }
+        .auth {
+            &__signup {
+                display: none;
+            }
         }
         .navigation-mobile .auth {
             display: flex;
+        }
+        .navigation-mobile {
+            .header__right-box {
+                margin-right: 0;
+
+                .auth {
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    max-width: 220px;
+                    width: 100%;
+                    gap: 20px 10px;
+
+                    &__signup,
+                    &__login {
+                        display: block;
+                    }
+
+                    &__login {
+                        min-width: 100px;
+                    }
+
+                    &__btn-anim {
+                        max-width: 220px;
+                        width: 100%;
+                    }
+                }
+            }
         }
     }
 }
@@ -58,7 +119,7 @@
     .header {
         .auth {
             &__btn-anim {
-                padding: 10px 20px;
+                padding: 13px 20px;
             }
         }
         .navigation-mobile {

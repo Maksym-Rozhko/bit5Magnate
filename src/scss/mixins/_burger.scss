@@ -1,39 +1,39 @@
 /* stylelint-disable */
 
 @mixin burger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  height: 55px;
-  width: 55px;
+  @include flex-all-center;
+  width: 40px;
+  height: 40px;
   position: fixed;
-  top: 16px;
+  top: 22px;
   right: 16px;
-  border-radius: 50%;
+  border-radius: 4px;
   z-index: 111;
-  box-shadow: 0 1px 10px rgab(0, 0, 0, .10);
+  background: rgba(233, 233, 233, 0.05);
   text-align: center;
   cursor: pointer;
+  border: none;
   transition-duration: .4s;
 
   &__line {
     position: relative;
-    width: 25px;
-    height: 3px;
-    background-color: var(--cs-main);
+    width: 22px;
+    height: 2px;
+    background-color: var(--cs-light);
     display: inline-block;
+    border-radius: 2px;
     transition-duration: .4s;
 
     &::before,
     &::after {
       content: "";
-      width: 25px;
-      height: 3px;
-      background-color: var(--cs-main);
+      width: 22px;
+      height: 2px;
+      background-color: var(--cs-light);
       display: inline-block;
       position: absolute;
       left: 0;
+      border-radius: 2px;
       transition: all .2s;
     }
 
@@ -59,11 +59,13 @@
   }
 
   &.burger--active .burger__line::before {
+    background-color: #444751;
     top: 0;
     transform: rotate(135deg);
   }
 
   &.burger--active .burger__line::after {
+    background-color: #444751;
     top: 0;
     transform: rotate(-135deg);
   }
