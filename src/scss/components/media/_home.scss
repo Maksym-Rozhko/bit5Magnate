@@ -1,22 +1,4 @@
-@include large-desktop {
-    .slider {
-        &__container {
-            padding-left: max(35px, (calc(100% - 1480px) / 2));
-        }
-    }
-}
-
 @include big-desktop {
-    .about {
-        &__container {
-            gap: 70px;
-        }
-    }
-    .tables {
-        &__container {
-            gap: 75px;
-        }
-    }
     .prizes {
         &__tabs {
             .tabs {
@@ -27,39 +9,12 @@
             }
         }
     }
-    .rules {
-        .list {
-            gap: 40px 85px;
-        }
-    }
 }
 
 @include small-desktop {
-    .main-info {
-        &__container {
-            grid-template-columns: 1fr;
-        }
-
-        .today {
-            &__container {
-                padding-right: 20px;
-            }
-
-            &__info {
-                max-width: inherit;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            &__price {
-                grid-column: 1;
-            }
-
-            .stats-range,
-            .stats-date {
-                grid-column: 2;
-            }
-        }
+    .main-screen {
+        padding-top: 128px;
+        padding-bottom: 100px;
     }
     .about {
         .section__title {
@@ -73,12 +28,6 @@
             &-image {
                 min-width: 190px;
             }
-        }
-    }
-    .tables {
-        &__container {
-            grid-template-columns: 1fr;
-            gap: 30px;
         }
     }
     .prizes {
@@ -104,38 +53,12 @@
             }
         }
     }
-    .rules {
-        .section__title {
-            margin-bottom: 30px;
-        }
-    
-        .list {
-            gap: 20px 40px;
-
-            &__item {
-                gap: 15px;
-            }
-
-            &__item-number {
-                min-width: 30px;
-            }
-        }
-    }
 }
 
 @include middle-tablet {
     .main-screen {
         &__title {
             font-size: 44px;
-        }
-    }
-    .main-info {
-        padding-bottom: 60px;
-        .today {
-            &__info {
-                max-width: 277px;
-                display: block;
-            }
         }
     }
     .about {
@@ -179,62 +102,23 @@
 @include small-tablet {
     .main-screen {
         overflow: hidden;
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 170px;
+        padding-bottom: 80px;
 
         &__title {
             font-size: 34px;
+        }
+        &__text {
             margin-bottom: 20px;
         }
-    }
-    .main-info {
-        &__title {
-            padding-left: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .today {
-            &__container {
-                padding-top: 40px;
-                padding-bottom: 40px;
-                padding-right: 10px;
-                gap: 10px;
-            }
-
-            &__price {
-                margin-bottom: 20px;
-                padding-left: 20px;
-                font-size: 30px;
-            }
-
-            &__stats-info {
-                padding-left: 20px;
-            }
-
-            &__stats-info--border {
-                padding-bottom: 12px;
-                margin-bottom: 10px;
-            }
-
-            &__stats-title {
-                font-size: 16px;
-                line-height: 22px;
-                margin-right: 10px;
-            }
+        &__text-sm {
+            margin-top: 20px;
+            margin-bottom: 40px;
         }
     }
-    .recent {
+    .timer {
         &__container {
-            margin: 20px;
-        }
-
-        .purchases {
-            &__list {
-                &-item {
-                    padding: 10px;
-                }
-            }
+            gap: 18px;
         }
     }
     .about {
@@ -245,133 +129,79 @@
             }
         }
     }
-    .rules {
-        .section__title {
-            margin-bottom: 15px;
-        }
-    
-        .list {
-            grid-template-columns: 1fr;
-            gap: 20px;
-
-            &__item {
-                gap: 10px;
-            }
-
-            &__item-number {
-                min-width: 30px;
-            }
-
-            &__item-description {
-                max-width: inherit;
-            }
-        }
-    }
 }
 
 @include mobile {
     .main-screen {
-        padding-top: 100px;
+        background-image: url('../images/home/main-screen-mob-bg.png');
 
         &__title {
-            font-size: 22px;
+            font-size: 50px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+        &__text-sm {
+            font-size: 16px;
         }
     }
 
     #currentTimer.timer {
-        .timer__container {
-            gap: 5px;
-            // flex-direction: column;
-        }
+        // .timer__container {
+        //     gap: 5px;
+        //     flex-direction: column;
+        // }
 
         .timer__item {
             gap: 10px;
-            align-items: flex-start;
-            flex-direction: row;
+            // align-items: flex-start;
+            // flex-direction: row;
             position: relative;
         }
 
         .timer__numbers {
             margin-bottom: 0;
-            width: 105px;
-            height: 105px;
-            font-size: 35px;
-            line-height: 46px;
-    
+            width: 72px;
+            height: 72px;
+            font-size: 24px;
+            line-height: 100%;
+
             svg {
                 circle {
-                    r: 50;
+                    r: 33;
                 }
+            }
+            svg:nth-child(2) circle {
+                stroke-dasharray: 210;
             }
         }
 
         .timer__description {
-            position: absolute;
-            bottom: 15px;
-            font-size: 10px;
-            line-height: 14px;
+            // position: absolute;
+            // bottom: 15px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
         }
     }
     #promoTimer.timer {
-        .timer__container {
-            gap: 5px;
-        }
+        // .timer__container {
+        //     gap: 5px;
+        // }
 
         .timer__item {
             gap: 10px;
-            align-items: flex-start;
-            flex-direction: row;
+            // align-items: flex-start;
+            // flex-direction: row;
             position: relative;
         }
 
         .timer__description {
-            position: absolute;
-            bottom: 25px;
-            font-size: 10px;
-            line-height: 14px;
-        }
-    }
-    .main-info {
-        .today {
-            &__container {
-                padding-top: 20px;
-                padding-bottom: 20px;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            &__grafic {
-                align-self: center;
-            }
-        }
-    }
-    .tables {
-        &::after {
-            content: none;
-        }
-    }
-    .recent {
-        .purchases {
-            &__titles {        
-                .purchases__title {
-                    font-size: 14px;
-                    line-height: 18px;
-                }
-            }
-
-            &__list {
-                &-item {
-                    padding: 8px;
-                    font-size: 10px;
-
-                    .code {
-                        font-size: 6px;
-
-                        .number {
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
+            // position: absolute;
+            // bottom: 25px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
         }
     }
     .about {
@@ -399,23 +229,11 @@
             }
         }
     }
-    .main-info {
-        padding-bottom: 30px;
-    }
     .section {
         padding: 30px 0;
 
         &__title {
             font-size: 24px;
-        }
-    }
-    .slider {
-        &__container {
-            padding-left: max(15px, (calc(100% - 1480px) / 2));
-
-            &::after {
-                content: none;
-            }
         }
     }
     .prizes {
@@ -454,67 +272,17 @@
             }
         }
     }
-    .every-day {
-        .section__text {
-            font-size: 16px;
-            line-height: 20px;
-        }
-    }
-    .fq {
-        .faq {
-            margin-top: 30px;
-    
-            &__question-text {
-                font-size: 18px;
-                line-height: 22px;
-            }
-        }
-    }
 }
 
 @include small-mobile {
-    #currentTimer.timer {
-        .timer__numbers {
-            width: 70px;
-            height: 70px;
-            font-size: 25px;
-            line-height: 36px;
-            border: 4px solid var(--cs-grey);
-    
-            svg {
-                circle {
-                    r: 33;
-                }
-            }
-        }
-
-        .timer__description {
-            bottom: -25px;
-            font-size: 12px;
-            line-height: 14px;
+    .main-screen {
+        &__title {
+            font-size: 48px;
         }
     }
-    .recent {
+    .timer {
         &__container {
-            margin: 10px;
-        }
-        .purchases {
-            &__titles {        
-                .purchases__title {
-                    font-size: 12px;
-                }
-            }
-
-            &__list {
-                &-item {
-                    padding: 8px 2px;
-                    font-size: 8px;
-
-                    .code {
-                        margin-right: 5px;
-                    }
-                }
-            }
+            gap: 5px;
         }
     }
     .prizes {
@@ -534,14 +302,6 @@
                         font-size: 12px;
                     }
                 }
-            }
-        }
-    }
-    .fq {
-        .faq {
-            &__question-text {
-                font-size: 16px;
-                line-height: 20px;
             }
         }
     }

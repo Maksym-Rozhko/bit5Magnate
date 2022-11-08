@@ -1,4 +1,8 @@
 function timer(id, deadline) {
+    let _strokeDasharray = 335;
+
+    window.innerWidth < 575 ? _strokeDasharray = 210 : false;
+
     if (id) {
         const addZero = num => num <= 9 ? `0${num}` : num;
 
@@ -45,11 +49,11 @@ function timer(id, deadline) {
 
                 if (days && hours) {
                     // set time circular indicator
-                    dd.style.strokeDashoffset = 335 - (335 * time.days) / 30;
-                    hh.style.strokeDashoffset = 335 - (335 * time.hours) / 24;
+                    dd.style.strokeDashoffset = _strokeDasharray - (_strokeDasharray * time.days) / 30;
+                    hh.style.strokeDashoffset = _strokeDasharray - (_strokeDasharray * time.hours) / 24;
                 }
-                mm.style.strokeDashoffset = 335 - (335 * time.minutes) / 60;
-                ss.style.strokeDashoffset = 335 - (335 * time.seconds) / 60;
+                mm.style.strokeDashoffset = _strokeDasharray - (_strokeDasharray * time.minutes) / 60;
+                ss.style.strokeDashoffset = _strokeDasharray - (_strokeDasharray * time.seconds) / 60;
 
                 if (time.total > 0) {
                     if (minutes) {
