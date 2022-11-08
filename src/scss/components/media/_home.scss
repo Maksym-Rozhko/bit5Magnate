@@ -87,6 +87,11 @@
                 margin-top: 30px;
             }
         }
+        .game {
+            &__container {
+                gap: 30px;
+            }
+        }
     }
     .section {
         padding: 60px 0;
@@ -123,9 +128,13 @@
     }
     .about {
         &__content {
-            
             &-image {
                 min-width: 190px;
+            }
+        }
+        .game {
+            &__container {
+                grid-template-columns: 1fr;
             }
         }
     }
@@ -204,10 +213,17 @@
             line-height: 16px;
         }
     }
-    .about {
-        .section__title {
-            margin-bottom: 15px;
+    .rating {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
         }
+        .section__title {
+            font-size: 30px;
+        }
+    }
+    .about {
         &__content {
             
             &-image {
@@ -224,8 +240,34 @@
                 }
             }
             .text {
-                margin-top: 10px;
-                margin-bottom: 10px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            .text.text-grey {
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
+        .section__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+        .game {
+            &__tabs {
+                .tabs {
+                    &__nav {
+                        padding-bottom: 15px;
+                        margin-bottom: 30px;
+                    }
+                    &__nav-btn {
+                        font-size: 18px;
+                    }
+                    &__nav-item {
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -283,6 +325,12 @@
     .timer {
         &__container {
             gap: 5px;
+        }
+    }
+    .slider {
+        .item {
+            padding: 50px 10px 40px 10px;
+            max-width: 240px;
         }
     }
     .prizes {
