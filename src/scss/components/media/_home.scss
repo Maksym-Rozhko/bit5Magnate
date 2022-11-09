@@ -1,3 +1,16 @@
+@include big-desktop {
+    .nft {
+        &__content {
+            padding-left: 16px;
+            grid-template-columns: 1fr;
+            margin-top: 25px;
+        }
+        &__list {
+            min-height: 240px;
+        }
+    }
+}
+
 @include small-desktop {
     .main-screen {
         padding-top: 128px;
@@ -37,6 +50,11 @@
             gap: 50px;
         }
     }
+    .nft {
+        &__btn-link {
+            font-size: 12px;
+        }
+    }
 }
 
 @include tablet {
@@ -58,6 +76,11 @@
                 width: 32px;
                 height: 32px;
             }
+        }
+    }
+    .nft {
+        &__content {
+            gap: 20px;
         }
     }
 }
@@ -184,6 +207,14 @@
             .text {
                 margin-bottom: 50px;
             }
+        }
+    }
+    .nft {
+        &__container {
+            grid-template-columns: 1fr;
+        }
+        &__list {
+            min-height: auto;
         }
     }
 }
@@ -380,6 +411,12 @@
             margin: 0 auto;
         }
     }
+    .nft {
+        &__btns-group {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 @include small-mobile {
@@ -397,6 +434,13 @@
         .item {
             padding: 50px 10px 40px 10px;
             max-width: 240px;
+        }
+    }
+    .nft {
+        &__item {
+            &-title {
+                font-size: 16px;
+            }
         }
     }
 }

@@ -576,8 +576,9 @@
     }
 
     &__text {
+        font-family: 'Azonix', sans-serif;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 115%;
         text-align: center;
         letter-spacing: -0.02em;
@@ -592,7 +593,7 @@
 
     &__container {
         @include flex-all-sb;
-        max-width: 1400px;
+        max-width: 1432px;
         gap: 100px;
     }
 
@@ -601,7 +602,7 @@
     }
 
     &__content {
-        max-width: 564px;
+        max-width: 620px;
         position: relative;
         z-index: 11;
 
@@ -626,6 +627,155 @@
         max-width: 250px;
         width: 100%;
         z-index: 11;
+    }
+}
+
+.nft {
+    padding: 160px 0;
+    
+    &__title {
+        @include title;
+        text-align: center;
+    }
+
+    &__descript {
+        font-family: 'Azonix', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 115%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        margin-top: 26px;
+        margin-bottom: 40px;
+        color: var(--cs-main);
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__item {
+        border: 1px solid var(--cs-grey);
+        border-radius: 4px;
+
+        &-title {
+            font-family: 'Azonix', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            color: var(--cs-light);
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 20px 20px 20px 60px;
+            background-color: #0C0D10;
+            border-bottom: 1px solid var(--cs-grey);
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: var(--cs-light);
+                top: 50%;
+                transform: translateY(-50%);
+                left: 40px;
+            }
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-top: 55px;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 16px;
+    }
+
+    &__video {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    &__list {
+        counter-reset: list;
+        min-height: 262px;
+
+        &-title {
+            font-family: 'Azonix', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 115%;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: var(--cs-light);
+            margin-bottom: 25px;
+        }
+
+        &-item {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: var(--cs-white);
+            position: relative;
+            padding-left: 47px;
+
+            &::before {
+                counter-increment: list;
+                content: counter(list);
+                position: absolute;
+                @include flex-all-center;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid #444751;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 180%;
+                color: var(--cs-light);
+                top: 0;
+                left: 0;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    &__btns-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px 40px;
+        position: relative;
+        z-index: 11;
+    }
+
+    &__btn-link {
+        @include btn-transparent;
+        max-width: inherit;
+        font-size: 14px;
+        border: 1px solid rgba(238, 155, 79, 0.3);
+
+        .accent {
+            color: var(--cs-main);
+        }
+
+        &:hover {
+            .accent {
+                color: var(--cs-dark);
+            }
+        }
+    }
+
+    &__btn-main {
+        @include btn-animate;
+        grid-column-end: 3;
     }
 }
 
