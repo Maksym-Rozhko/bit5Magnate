@@ -67,6 +67,7 @@
         }
 
         .list {
+            justify-content: center;
             gap: 15px;
         }
         .header__right-box {
@@ -92,7 +93,7 @@
             margin-top: 0;
 
             .nav {
-                max-width: 200px;
+                max-width: 260px;
                 justify-content: center;
                 order: 1;
                 padding-bottom: 25px;
@@ -124,9 +125,22 @@
 
 @include small-mobile {
     .footer {
+        .header {
+            &__right-box {
+                .auth__login {
+                    margin-right: 10px;
+                }
+                .auth {
+                    gap: 10px;
+                }
+            }
+        }
         .bottom-group {
             .copyright {
                 max-width: 120px;
+            }
+            .socials {
+                order: -1;
             }
         }
     }

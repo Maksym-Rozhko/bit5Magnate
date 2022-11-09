@@ -1,4 +1,7 @@
 @include big-desktop {
+    .main-screen {
+        background-size: cover;
+    }
     .nft {
         &__content {
             padding-left: 16px;

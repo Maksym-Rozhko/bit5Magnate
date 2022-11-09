@@ -1,10 +1,10 @@
 .main-screen {
     padding-top: 228px;
     padding-bottom: 105px;
-    background-image: url('../images/home/main-screen-bg.jpg');
+    background-image: url('../images/home/main-screen-bg-new.jpg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: auto;
 
     &__container {
         max-width: 711px;
@@ -659,6 +659,8 @@
     &__item {
         border: 1px solid var(--cs-grey);
         border-radius: 4px;
+        position: relative;
+        z-index: 11;
 
         &-title {
             font-family: 'Azonix', sans-serif;
