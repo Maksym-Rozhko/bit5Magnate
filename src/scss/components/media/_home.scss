@@ -1,16 +1,3 @@
-@include big-desktop {
-    .prizes {
-        &__tabs {
-            .tabs {
-                &__nav {
-                    gap: 20px;
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }
-}
-
 @include small-desktop {
     .main-screen {
         padding-top: 128px;
@@ -36,26 +23,11 @@
         }
     }
     .prizes {
-        &__tabs {
-            .tabs {
-                margin-bottom: 20px;
-                &__nav {
-                    gap: 10px;
-                    margin-bottom: 20px;
-                }
-                &__nav-item {
-                    padding-right: 15px;
-                }
-                &__nav-btn {
-                    .tabs__nav-icon {
-                        margin-right: 5px;
-                    }
-                    .tabs__new-text {
-                        font-size: 16px;
-                        line-height: 22px;
-                    }
-                }
-            }
+        &__container {
+            gap: 25px;
+        }
+        &__item {
+            padding: 20px 30px 40px 30px;
         }
     }
     .token {
@@ -63,6 +35,29 @@
 
         &__container {
             gap: 50px;
+        }
+    }
+}
+
+@include tablet {
+    .prizes {
+        &__item {
+            &-title {
+                font-size: 22px;
+            }
+        }
+        &__descript {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        &__icon {
+            width: 60px;
+            height: 60px;
+            
+            svg {
+                width: 32px;
+                height: 32px;
+            }
         }
     }
 }
@@ -111,7 +106,10 @@
     .prizes {
         &__container {
             grid-template-columns: 1fr;
-            gap: 20px;
+        }
+
+        &__descript {
+            max-width: inherit;
         }
     }
     .token {
@@ -338,55 +336,6 @@
             font-size: 30px;
             margin-bottom: 30px;
             max-width: 250px;
-        }
-    }
-    .prizes {
-        &__tabs {
-            .tabs {
-                margin-bottom: 50px;
-                padding-bottom: 0;
-                border-bottom: none;
-                &__nav {
-                    // flex-wrap: wrap;
-                    gap: 20px;
-                    padding-bottom: 13px;
-                    margin-bottom: 40px;
-                    overflow-x: auto;
-                    justify-content: space-between;
-                }
-                &__nav-item {
-                    padding: 5px;
-                    min-width: 145px;
-                }
-                &__nav-btn {
-                    // flex-direction: column;
-                    gap: 5px;
-
-                    &::before {
-                        bottom: -17px;
-                    }
-
-                    .tabs__nav-icon {
-                        margin-right: 0;
-                    }
-                    .tabs__new-text {
-                        @include flex-v-center;
-                        gap: 5px;
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-        &__signup {
-            margin-bottom: 20px;
-            max-width: 315px;
-            margin-left: 0;
-            padding: 17px 36px;
-            text-transform: none;
-        }
-        .text-accent {
-            font-size: 16px;
-            text-align: left;
         }
     }
     .token {

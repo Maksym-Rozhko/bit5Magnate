@@ -1,4 +1,5 @@
 @mixin btn-transparent {
+    font-family: 'Azonix', sans-serif;
     display: block;
     border-radius: 4px;
     font-weight: 700;
@@ -21,6 +22,7 @@
 }
 
 @mixin btn-link {
+    font-family: 'Azonix', sans-serif;
     display: block;
     border-radius: 4px;
     font-weight: 700;
@@ -54,7 +56,8 @@
 }
 
 @mixin title {
-    font-weight: 700;
+    font-family: 'Azonix', sans-serif;
+    font-weight: 400;
     font-size: 40px;
     line-height: 100%;
     letter-spacing: -0.04em;
@@ -66,101 +69,3 @@
 .section {
   padding: 120px 0;
 }
-
-// .section--bg {
-//   margin-top: 90px;
-//   margin-bottom: 100px;
-//   padding-top: 72px;
-//   padding-bottom: 40px;
-//   background-image: url('../images/home/bg.jpg');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-
-//   .section__title {
-//     text-align: center;
-//   }
-// }
-
-// .section-bg-color {
-//     background-color: #090A0D;
-// }
-
-// .content {
-//     padding-bottom: 150px;
-
-//     .mb-40 {
-//         margin-bottom: 40px;
-//     }
-    
-//     .mt-30 {
-//         margin-top: 30px;
-//     }
-    
-//     .mb-30 {
-//         margin-bottom: 30px;
-//     }
-
-//     &__wrapper {
-//         max-width: 1110px;
-//         width: 100%;
-//         margin: 0 auto;
-//     }
-
-//     &__title {
-//         font-weight: 500;
-//         font-size: 20px;
-//         line-height: 27px;
-//         color: var(--cs-light);
-//         margin-top: 0;
-//         margin-bottom: 0;
-//     }
-
-//     &__text {
-//         font-weight: 400;
-//         font-size: 16px;
-//         line-height: 180%;
-//         color: #686B74;
-//         margin-top: 0;
-//         margin-bottom: 0;
-//     }
-    
-//     .list {
-//         display: grid;
-//         grid-template-columns: 1fr;
-//         gap: 20px;
-
-//         &__item {
-//             display: flex;
-//             gap: 30px;
-//         }
-
-//         &__item-number {
-//             font-weight: 500;
-//             font-size: 12px;
-//             line-height: 180%;
-//             color: var(--cs-light);
-//             width: 30px;
-//             min-width: 30px;
-//             height: 30px;
-//             border: 1px solid rgba(68, 71, 81, .5);
-//             border-radius: 50%;
-//             @include flex-all-center;
-//         }
-
-//         &__item-description {
-//             margin-top: 0;
-//             margin-bottom: 0;
-//             font-weight: 400;
-//             font-size: 16px;
-//             line-height: 22px;
-//             color: #686B74;
-//         }
-//     }
-// }
-
-// @include mobile {
-//     .section--bg {
-//         margin-bottom: 50px;
-//     }
-// }

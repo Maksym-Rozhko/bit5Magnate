@@ -14,8 +14,9 @@
     }
 
     &__title {
-        font-weight: 700;
-        font-size: 90px;
+        font-family: 'Azonix', sans-serif;
+        font-weight: 400;
+        font-size: 80px;
         line-height: 100%;
         text-align: center;
         letter-spacing: -0.02em;
@@ -25,13 +26,18 @@
     }
 
     &__text {
+        font-family: 'Azonix', sans-serif;
         font-weight: 400;
-        font-size: 28px;
+        font-size: 18px;
         line-height: 115%;
         letter-spacing: -0.02em;
         color: var(--cs-light);
         margin-top: 10px;
         margin-bottom: 40px;
+
+        .accent {
+            color: var(--cs-main);
+        }
 
         &-sm {
             font-size: 16px;
@@ -273,10 +279,11 @@
                 }
                 
                 &__nav-btn {
+                    font-family: 'Azonix', sans-serif;
                     cursor: pointer;
                     color: #444751;
                     font-weight: 400;
-                    font-size: 24px;
+                    font-size: 18px;
                     line-height: 115%;
                     letter-spacing: -0.02em;
                     padding: 0;
@@ -436,7 +443,7 @@
 
 .prizes {
     padding-top: 160px;
-    padding-bottom: 200px;
+    padding-bottom: 140px;
     background-color: #0C0D10;
 
     .section__title {
@@ -444,159 +451,108 @@
         margin-bottom: 60px;
     }
 
-    &__tabs {
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 40px 50px 60px 50px;
+        border-radius: 4px;
         position: relative;
         z-index: 11;
+        cursor: default;
 
-        .tabs {
-            padding-bottom: 60px;
-            margin-bottom: 40px;
-            border-bottom: 1px solid #1B1C21;
+        &-title {
+            font-family: 'Azonix', sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 115%;
+            letter-spacing: -0.02em;
+            color: var(--cs-light);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
-            &__nav {
-                gap: 60px;
-                margin-bottom: 60px;
-                justify-content: center;
-                padding-bottom: 11px;
-                border-bottom: 1px solid #1B1C21;
+        &--bronze {
+            background: linear-gradient(180deg, #33201A 0%, #090A0D 100%);
+
+            .prizes__item-title {
+                color: #EE9B4F;
             }
 
-            &__nav-item {
-                &:hover {
-                    .tabs__nav-icon {
-                        & svg {
-                            color: var(--cs-main);
-                        }
-                    }
-
-                    .tabs__new-text {
-                        span:last-child {
-                            color: var(--cs-main);
-                        }
-                    }
-                }
-            }
-            
-            &__nav-btn {
-                cursor: pointer;
-                color: var(--cs-grey-text);
-                @include flex-v-center;
-                padding: 0;
-                background: transparent;
-                border: none;
-                transition: all ease-in-out .4s;
-                position: relative;
-
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 1px;
-                    background-color: var(--cs-main);
-                    bottom: -11px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    opacity: 0;
-                    transition: all ease-in-out .4s;
+            .prizes__icon {
+                svg {
+                    color: #EE754F;
                 }
             }
 
-            &__nav-btn--active {
-                &::before {
-                    opacity: 1;
-                }
-                .tabs__nav-icon {
-                    & svg {
-                        color: var(--cs-main);
-                    }
-                }
-                .tabs__new-text {
-                    span:first-child,
-                    span:last-child  {
-                        color: var(--cs-white);
-                    }
+            .prices__btn {
+                color: #EE9B4F;
+            }
+        }
+
+        &--silver {
+            background: linear-gradient(180deg, #2D2D2D 0%, #090A0D 100%);
+        }
+
+        &--gold {
+            background: linear-gradient(180deg, #3E3227 0%, #090A0D 100%);
+
+            .prizes__item-title {
+                color: var(--cs-main);
+            }
+
+            .prizes__icon {
+                svg {
+                    color: var(--cs-main);
                 }
             }
 
-            &__nav-icon {
-                width: 50px;
-                height: 50px;
-                @include flex-all-center;
-                border-radius: 50%;
-                background: rgba(233, 233, 233, 0.05);
-                margin-right: 15px;
-
-                & svg {
-                    color: var(--cs-grey-text);
-                    transition: all ease-in-out .4s;
-                }
-            }
-
-            &__new-text {
-                font-weight: 500;
-                font-size: 20px;
-                line-height: 27px;
-
-                span:first-child,
-                span:last-child {
-                    color: var(--cs-grey-text);
-                    transition: all ease-in-out .4s;
-                }
-            }
-            &__content {
-                overflow: hidden;
-
-                .tabs__panel {
-                    display: inherit !important;
-                    height: 0;
-                    visibility: hidden;
-                    opacity: 0;
-                    transform: translateX(100%);
-                    transition: all ease-in-out .4s;
-
-                    .text {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 180%;
-                        max-width: 1237px;
-                        margin: 0 auto;
-                        text-align: center;
-                        color: var(--cs-light);
-                    }
-                }
-                .tabs__panel--active {
-                    visibility: visible;
-                    opacity: 1;
-                    height: auto;
-                    transform: translateX(0);
-                }
+            .prices__btn {
+                color: #EE9B4F;
             }
         }
     }
 
-    &__signup {
-        @include btn-transparent;
-        max-width: 712px;
-        padding: 20px;
-        font-weight: 800;
-        font-size: 20px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 15px;
-        border: 1px solid rgba(238, 155, 79, 0.3);
+    &__icon {
+        width: 97px;
+        height: 97px;
+        @include flex-all-center;
+        border-radius: 50%;
+        background: rgba(233, 233, 233, 0.05);
+        margin-right: 15px;
+
+        svg {
+            color: var(--cs-grey-text);
+        }
     }
 
-    .text-accent {
-        display: block;
-        text-align: center;
+    &__descript {
         font-weight: 400;
-        font-size: 24px;
-        line-height: 115%;
-        letter-spacing: -0.02em;
-        color: var(--cs-main);
+        font-size: 16px;
+        line-height: 180%;
+        color: rgba(233, 233, 233, 0.8);
+        margin-top: 40px;
+        margin-bottom: 70px;
+        max-width: 340px;
+    }
+
+    &__btn {
+        @include btn-transparent;
+        max-width: inherit;
+        padding: 19px 20px;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        border: 1px solid rgba(238, 155, 79, 0.3);
     }
 }
 

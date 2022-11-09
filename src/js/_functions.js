@@ -36,7 +36,6 @@ import { enableScroll } from './functions/disable-scroll';
 // Реализация табов
 import GraphTabs from 'graph-tabs';
 const tabs = new GraphTabs('tab');
-const prizes = new GraphTabs('prizes');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 // import { getHeaderHeight } from './functions/header-height';
