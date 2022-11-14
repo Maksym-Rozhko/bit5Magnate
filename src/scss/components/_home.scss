@@ -369,7 +369,6 @@
             margin-bottom: 0;
             color: var(--cs-light);
         }
-
         .text-grey {
             margin-top: 22px;
             color: #444751;
@@ -384,6 +383,12 @@
             color: var(--cs-main);
         }
 
+        .subtext {
+            max-width: 350px;
+            text-align: right;
+            margin-top: 5px;
+        }
+
         .btn-group {
             position: relative;
             z-index: 11;
@@ -395,7 +400,7 @@
                 font-weight: 800;
                 font-size: 20px;
                 padding: 20px;
-                max-width: 315px;
+                max-width: 350px;
                 width: 100%;
             }
         }
@@ -553,6 +558,7 @@
         font-size: 20px;
         text-align: center;
         border: 1px solid rgba(238, 155, 79, 0.3);
+        width: 100%;
     }
 }
 

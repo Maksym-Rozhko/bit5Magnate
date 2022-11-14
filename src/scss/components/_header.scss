@@ -76,7 +76,16 @@
             white-space: nowrap;
         }
         &__login {
-            @include btn-link;
+            font-family: 'Azonix', sans-serif;
+            display: block;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 100%;
+            color: var(--cs-white);
+            padding: 13px 19px;
+            cursor: default;
+            // @include btn-link;
         }
         &__btn-anim {
             @include btn-transparent;
